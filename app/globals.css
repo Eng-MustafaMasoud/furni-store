@@ -2,32 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+     scroll-behavior: smooth !important;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.link:hover + .line {
+  
+ width:100%;
+ transition:width .2s ease,opacity .35s ease;
+
+
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.furni:hover > .img{
+  transform: scale(1.05) translateY(-2%);
+  transition: transform .5s ease-in-out;
+}
+.furni:hover > .furni-btn{
+  display: block;
+  bottom: -20px;
+  opacity: 1;
+  transition: all 1s ease-in;
+
+}
+.top-fur:hover > span{
+  height:60%;
+  transition: all .5s ease-in;
+
+}
+.interior-list{
+  list-style: url('../public/images/circle.svg');
+  list-style-position: inside;
+  
+}
+
+.tes-btn:hover > .icon{
+  color:#fff
 }
