@@ -54,9 +54,9 @@ const Testimonoals = () => {
       </h2>
       <div className="w-[100%]  text-center items-center flex  overflow-hidden  ">
         {TestimonoalsData?.map((item, index) => (
-            <div className=" w-full md:px-24  text-center items-center justify-center  shrink-0 grow-0  flex    transition-all duration-300 ease-in" style={{ translate: `${-100 * imageIndex}%` }}>
+            <div key={item.id} className=" w-full md:px-24  text-center items-center justify-center  shrink-0 grow-0  flex    transition-all duration-300 ease-in" style={{ translate: `${-100 * imageIndex}%` }}>
 
-                <TestimonialsCard  key={item.id} item={item}  />
+                <TestimonialsCard   item={item}  />
             </div>
         ))}
       </div>
