@@ -49,7 +49,7 @@ const Testimonoals = () => {
 
 
 
-      <h2 className="text-center text-xl font-bold tracking-wider">
+      <h2 className="text-center text-2xl font-bold tracking-wider">
         Testimonials
       </h2>
       <div className="w-[100%] h-full items-center flex  overflow-hidden  ">
