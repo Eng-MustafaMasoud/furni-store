@@ -7,6 +7,7 @@
   html {
      scroll-behavior: smooth !important;
   }
+ 
 }
 
 .link:hover + .line {
@@ -42,4 +43,26 @@
 
 .tes-btn:hover > .icon{
   color:#fff
+}
+
+.circle:hover > .icon-s{
+  color:#fff
+}
+.circle{
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:640px) {
+  p{
+    font-size: small;
+  }
+  li{
+    font-size: small;
+
+  }
+  span{
+    font-size: small;
+
+  }
 }

@@ -14,7 +14,7 @@ const Navbar = () => {
     <header className="flex w-full bg-main  ">
       <nav className="flex h-24 text-standard px-6 max-sm:px-2 w-full  justify-between items-center max-w-7xl  mx-auto ">
         <Link href="/" className="text-[#888] font-extrabold text-xl">
-          <span className="text-standard md:text-4xl tracking-wider">Furni</span>.
+          <span className="text-standard md:text-4xl text-xl tracking-wider">Furni</span>.
         </Link>
         <div className="flex gap-8 xl:gap-10 max-sm:gap-4">
           <ul className="hidden h-full md:flex items-center gap-4 xl:gap-6 text-white">

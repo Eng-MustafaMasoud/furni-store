@@ -49,12 +49,12 @@ const Testimonoals = () => {
 
 
 
-      <h2 className="text-center text-2xl font-bold tracking-wider">
+      <h2 className="text-center sm:text-2xl text-lg font-bold tracking-wider">
         Testimonials
       </h2>
-      <div className="w-[100%] h-full items-center flex  overflow-hidden  ">
+      <div className="w-[100%]  text-center items-center flex  overflow-hidden  ">
         {TestimonoalsData?.map((item, index) => (
-            <div className=" w-full px-24  text-center items-center justify-center  shrink-0 grow-0  flex    transition-all duration-300 ease-in" style={{ translate: `${-100 * imageIndex}%` }}>
+            <div className=" w-full md:px-24  text-center items-center justify-center  shrink-0 grow-0  flex    transition-all duration-300 ease-in" style={{ translate: `${-100 * imageIndex}%` }}>
 
                 <TestimonialsCard  key={item.id} item={item}  />
             </div>
@@ -62,13 +62,13 @@ const Testimonoals = () => {
       </div>
       <button
         onClick={handlePrevImage}
-        className="absolute top-[50%] left-[2%] bg-[#E6ECEC] hover:bg-[#3B5D50] w-14 h-14 rounded-full items-center flex justify-center text-standard text-[18px] tes-btn"
+        className="absolute sm:top-[50%] top-[60%] left-[2%] bg-[#E6ECEC] hover:bg-[#3B5D50] w-14 h-14 rounded-full items-center flex justify-center text-standard text-[18px] tes-btn"
       >
         <IoIosArrowBack  className="text-[#000] icon"/>
       </button>
       <button
         onClick={handleNextImage}
-        className="absolute top-[50%] right-[2%] bg-[#E6ECEC]  hover:bg-[#3B5D50] w-14 h-14 rounded-full items-center flex justify-center text-standard text-[18px] tes-btn"
+        className="absolute sm:top-[50%] top-[60%] right-[2%] bg-[#E6ECEC]  hover:bg-[#3B5D50] w-14 h-14 rounded-full items-center flex justify-center text-standard text-[18px] tes-btn"
       >
         <IoIosArrowForward  className="text-[#000] icon"/>
       </button>

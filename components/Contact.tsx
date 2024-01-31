@@ -13,16 +13,16 @@ const Contact = () => {
           <Image src={envelope} alt="envelope" />
           <h2>Subscripe to Newletter</h2>
         </div>
-        <form action="" className="flex gap-4">
+        <form action="" className="flex gap-4 flex-wrap item-center">
           <input
             type="text"
             placeholder="Enter your name"
-            className="border border-[#99999942] rounded-xl px-2 focus:shadow-lg"
+            className="border max-sm:max-w-[150px] border-[#99999942] rounded-xl px-2 py-6 h-0 focus:shadow-lg"
           />
           <input
             type="email"
-            placeholder="Enter your email address"
-            className="border border-[#99999942] rounded-xl px-2  focus:shadow-lg"
+            placeholder="Enter your email "
+            className="border max-sm:max-w-[150px] border-[#99999942] rounded-xl px-2 py-6 h-0 focus:shadow-lg"
           />
           <button
             
@@ -31,7 +31,7 @@ const Contact = () => {
             <Image
               src={send}
               alt="send"
-              className="w-6 h-6  text-standard "
+              className="w-6 h-4  text-standard "
             />
           </button>
         </form>

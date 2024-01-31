@@ -7,7 +7,7 @@ import Image from "next/image";
 const Blog = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 my-24 py-16">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center flex-wrap gap-4">
         <h2 className=" text-2xl font-bold tracking-widest ">Recent Blog</h2>
         <Link href="/blog" className="capitalize underline text-sm">
           view All posts
